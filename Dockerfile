@@ -5,7 +5,7 @@ RUN apk add --no-cache --virtual .build-deps gcc musl-dev make libffi-dev openss
 RUN pip install -U pip setuptools \
     && pip install --no-cache-dir uvicorn ariadne
 
-RUN apk del .build-deps gcc musl-dev make libffi-dev openssl-de
+RUN apk del .build-deps gcc musl-dev make libffi-dev openssl-dev
 
 VOLUME /code
 
