@@ -5,4 +5,4 @@ from schema import schema
 
 app = Starlette(debug=True)
 
-app.mount('/', Graphql(schema, debug=True))
+app.mount('/graphql', GraphQL(schema, debug=True))
