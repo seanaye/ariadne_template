@@ -1,7 +1,7 @@
 version: '3'
 services:
     ariadne:
-        build: ./code
+        build: ./Dockerfile
         volumes:
             - "./code:/code"
             - "./temp:/temp"
